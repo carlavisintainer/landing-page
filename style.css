@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: radial-gradient(#160544, #3d0e66);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main {
+    background: #FFF;
+    position: relative;
+    max-width: 1000px;
+    width: 800px;
+    margin: 5rem auto;
+
+}
+
+header {
+    background: linear-gradient(90deg, #4200f7, #641fa1, #8b47c7) no-repeat;
+
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#container {
+    display: flex;
+
+}
+
+#logo{
+    width: 60vw;
+    padding-left: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+
+}
+
+#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 170px;
+    
+}
+
+
+#formulario input[type='email'] {
+    width: 400px;
+    padding-right: 20rem;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.3rem;
+}
+
+#formulario input[type='submit'] {
+    width: 180px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #df0089, #f37e11, #ffd621);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    padding: 0.5rem;
+}
+
+.grid {
+    display: flex;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    color: darkorange;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    padding-right: 2rem;
+    text-align: justify;
+
+  }
+
+footer {
+    background: linear-gradient(90deg, #4200f7, #641fa1, #8b47c7) no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+.copyright {
+    color: #FFF;
+
+}
+
+
+
+/* Media Querry */
+
+@media (max-width: 650px) {
+    nav > ul {
+        flex-direction: column;
+      }
+
+      #formulario {
+        resize: vertical;
+
+    }      
+
+
+      #formulario input[type='email'] {
+        width: 100%;
+        
+    }
+    
+    #formulario input[type='submit'] {
+        width: 100%;
+    }    
+
+}
